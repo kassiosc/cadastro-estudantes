@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef3f9;
+  color: #243247;
+}
+
+.container {
+  width: min(100% - 32px, 1000px);
+  margin: 40px auto;
+}
+
+.cabecalho {
+  margin-bottom: 24px;
+}
+
+.cabecalho h1 {
+  margin-bottom: 8px;
+  color: #17365d;
+}
+
+.cabecalho p {
+  margin-top: 0;
+  color: #5d6b7c;
+}
+
+.painel {
+  background: #ffffff;
+  padding: 24px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(25, 50, 80, 0.08);
+}
+
+.painel h2 {
+  margin-top: 0;
+  color: #17365d;
+  font-size: 19px;
+}
+
+#form-aluno {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: end;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.campo label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.campo input:focus {
+  outline: 2px solid #9bc2ff;
+  border-color: #1f6feb;
+}
+
+button {
+  border: 0;
+  border-radius: 7px;
+  padding: 12px 16px;
+  background: #1f6feb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1558bd;
+}
+
+.mensagem {
+  min-height: 18px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.mensagem.erro {
+  color: #b42318;
+}
+
+.mensagem.sucesso {
+  color: #167647;
+}
+
+.titulo-tabela {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#total-alunos {
+  color: #5d6b7c;
+  font-size: 13px;
+}
+
+.tabela-responsiva {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 13px 10px;
+  border-bottom: 1px solid #e5eaf0;
+  font-size: 14px;
+}
+
+th {
+  background: #f4f7fb;
+  color: #34445a;
+}
+
+.botao-excluir {
+  background: #c93636;
+  padding: 8px 11px;
+}
+
+.botao-excluir:hover {
+  background: #a82121;
+}
+
+.vazio {
+  text-align: center;
+  color: #718096;
+  padding: 22px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin: 20px auto;
+  }
+  #form-aluno {
+    grid-template-columns: 1fr;
+  }
+  .painel {
+    padding: 17px;
+  }
+}
