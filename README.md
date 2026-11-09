@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 Cadastro de Estudantes
 
 CRUD de estudantes com **Node.js + Express** no back-end e **HTML, CSS e JavaScript puro** no front-end. Os dados ficam em um arquivo JSON, então não é preciso instalar banco de dados.
@@ -55,3 +56,6 @@ cadastro-estudantes/
 - [ ] Trocar o arquivo JSON por um banco (SQLite ou MySQL)
 
 
+=======
+# cadastro-estudantes
+>>>>>>> d55791c62e9d59244a2a4bfb0ef01c84f4747a0a
